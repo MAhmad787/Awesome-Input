@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Input Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="contact-section">
+      <h1 class="section-title">Contact</h1>
+      <form
+        accept="information"
+        class="form"
+        id="my-form"
+        action="C:\Users\LENOVO\Downloads\ind.html"
+      >
+        <span id="dnt-submit"></span>
+        <span id="text"></span>
+        <section class="name-section margin">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+            required
+          />
+          <label for="name" class="label">
+            <span class="content-name">Name</span>
+          </label>
+        </section>
+        <section class="name-section margin">
+          <input
+            type="text"
+            name="country"
+            id="country"
+            autocomplete="off"
+            required
+          />
+          <label for="name" class="label">
+            <span class="content-name">Country</span>
+          </label>
+        </section>
+        <section class="name-section margin">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            autocomplete="off"
+            required
+            onkeydown="validation()"
+          />
+          <label for="name" class="label">
+            <span class="content-name">Email</span>
+          </label>
+        </section>
+        <section class="btn-section margin">
+          <div class="send">
+            <input type="submit" value="Send" name="send" id="send" />
+          </div>
+          <div class="reset">
+            <input type="reset" value="Reset" name="reset" />
+          </div>
+        </section>
+      </form>
+    </section>
+    <script src="js/form-validation.js"></script>
+  </body>
+</html>

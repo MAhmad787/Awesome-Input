@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#text {
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 50rem;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #111;
+  bottom: 0;
+  left: calc(50% - 40px);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  background-color: #48dbfb;
+  border: 4px solid white;
+  bottom: -7px;
+  left: calc(50% - 12px);
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.name-section {
+  width: 48.5%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.name-section input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+.name-section label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.name-section input:focus + .label {
+  border-bottom: none;
+  font-size: 1.6rem;
+}
+
+.label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 3px solid #5fa8d3;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.content-name {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.name-section input:focus + .label .content-name,
+.name-section input:valid + .label .content-name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.name-section input:focus + .label::after,
+.name-section input:valid + .label::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.btn-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 2.8rem;
+}
+
+.send {
+  margin-right: 0.5rem;
+  width: 50%;
+}
+
+.reset {
+  margin-left: 0.5rem;
+  width: 50%;
+}
+
+.send input,
+.reset input {
+  width: 100%;
+  font-size: 1.01rem;
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  outline: none;
+}
+
+.send input:hover,
+.reset input:hover {
+  background-color: #5fa8d3;
+}
+
+.margin {
+  margin-bottom: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */
